@@ -20,6 +20,8 @@ if os.path.exists('tasks.json'):
             with open('tasks.json', 'w') as json_file:
                 json.dump(a, json_file, ensure_ascii=False, indent = 4)
             print("Задача добавлена")
+        elif b == "help":
+            print("Доступные команды:\n add - добавить задачу\n list - список задач\n done - отметить задачу выполненой\n exit - выход")
         elif b == 'done':
             print("Введите ID задачи:")
             try:
